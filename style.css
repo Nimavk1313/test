@@ -115,3 +115,56 @@ body, html {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     transition: width 0.3s ease-in-out;
 }
+
+.drop-indicator {
+    height: 4px;
+    background-color: #1890ff;
+    width: 100%;
+    transition: all 0.2s;
+}
+
+/* Style Panel */
+.style-section {
+    margin-bottom: 20px;
+    display: none; /* Hidden by default */
+}
+
+.style-section h4 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 8px;
+}
+
+.style-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.style-control label {
+    font-size: 13px;
+    color: #595959;
+}
+
+.style-control input[type="text"] {
+    width: 80px;
+    padding: 4px 8px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+}
+
+.style-control input[type="color"] {
+    width: 80px;
+    height: 28px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+#no-element-selected {
+    color: #8c8c8c;
+    text-align: center;
+    padding-top: 20px;
+}

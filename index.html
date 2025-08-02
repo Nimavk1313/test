@@ -21,6 +21,9 @@
                     <div class="element" draggable="true" data-type="section">Section</div>
                     <div class="element" draggable="true" data-type="container">Container</div>
                     <div class="element" draggable="true" data-type="heading">Heading</div>
+                    <div class="element" draggable="true" data-type="button">Button</div>
+                    <div class="element" draggable="true" data-type="image">Image</div>
+                    <div class="element" draggable="true" data-type="richtext">Rich Text</div>
                 </div>
                 <div id="layers-panel">
                     <h3>Layers</h3>
@@ -32,7 +35,22 @@
             </div>
             <div id="right-panel">
                 <h3>Styles</h3>
-                <div id="style-panel"></div>
+                <div id="style-panel">
+                    <div id="typography-style-section" class="style-section">
+                        <h4>Typography</h4>
+                        <div class="style-control">
+                            <label for="font-size-input">Size</label>
+                            <input type="text" id="font-size-input" placeholder="16px">
+                        </div>
+                        <div class="style-control">
+                            <label for="color-input">Color</label>
+                            <input type="color" id="color-input">
+                        </div>
+                    </div>
+                    <div id="no-element-selected">
+                        <p>Select an element to style it.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
