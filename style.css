@@ -168,3 +168,50 @@ body, html {
     text-align: center;
     padding-top: 20px;
 }
+
+.style-section h5 {
+    margin: 15px 0 5px 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: #595959;
+}
+
+.four-way-control {
+    display: flex;
+    justify-content: space-between;
+}
+
+.four-way-control input {
+    width: 22%;
+    text-align: center;
+    padding: 4px;
+}
+
+#rich-text-toolbar {
+    position: absolute;
+    display: none;
+    background-color: #333;
+    border-radius: 6px;
+    padding: 4px;
+    z-index: 1000;
+}
+
+#rich-text-toolbar button {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#rich-text-toolbar button:hover {
+    background-color: #555;
+}
+
+#rich-text-toolbar button.active {
+    background-color: #777;
+}

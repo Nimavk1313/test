@@ -24,6 +24,7 @@
                     <div class="element" draggable="true" data-type="button">Button</div>
                     <div class="element" draggable="true" data-type="image">Image</div>
                     <div class="element" draggable="true" data-type="richtext">Rich Text</div>
+                    <div class="element" draggable="true" data-type="columns">Columns</div>
                 </div>
                 <div id="layers-panel">
                     <h3>Layers</h3>
@@ -47,6 +48,53 @@
                             <input type="color" id="color-input">
                         </div>
                     </div>
+                    <div id="button-style-section" class="style-section">
+                        <h4>Button Styles</h4>
+                        <div class="style-control">
+                            <label for="background-color-input">Background</label>
+                            <input type="color" id="background-color-input">
+                        </div>
+                         <div class="style-control">
+                            <label for="button-color-input">Text Color</label>
+                            <input type="color" id="button-color-input">
+                        </div>
+                        <div class="style-control">
+                            <label for="padding-input">Padding</label>
+                            <input type="text" id="padding-input" placeholder="12px 24px">
+                        </div>
+                        <div class="style-control">
+                            <label for="border-radius-input">Border Radius</label>
+                            <input type="text" id="border-radius-input" placeholder="5px">
+                        </div>
+                    </div>
+                    <div id="image-style-section" class="style-section">
+                        <h4>Image Settings</h4>
+                        <div class="style-control">
+                            <label for="image-src-input">Source URL</label>
+                            <input type="text" id="image-src-input" placeholder="https://...">
+                        </div>
+                         <div class="style-control">
+                            <label for="image-alt-input">Alt Text</label>
+                            <input type="text" id="image-alt-input" placeholder="Description">
+                        </div>
+                    </div>
+                    <div id="spacing-style-section" class="style-section">
+                        <h4>Spacing</h4>
+                        <h5>Margin</h5>
+                        <div class="four-way-control">
+                           <input type="text" id="margin-top-input" placeholder="T">
+                           <input type="text" id="margin-right-input" placeholder="R">
+                           <input type="text" id="margin-bottom-input" placeholder="B">
+                           <input type="text" id="margin-left-input" placeholder="L">
+                        </div>
+                        <h5>Padding</h5>
+                        <div class="four-way-control">
+                           <input type="text" id="padding-top-input" placeholder="T">
+                           <input type="text" id="padding-right-input" placeholder="R">
+                           <input type="text" id="padding-bottom-input" placeholder="B">
+                           <input type="text" id="padding-left-input" placeholder="L">
+                        </div>
+                    </div>
                     <div id="no-element-selected">
                         <p>Select an element to style it.</p>
                     </div>
@@ -54,6 +102,13 @@
             </div>
         </div>
     </div>
+
+    <div id="rich-text-toolbar">
+        <button data-command="bold">B</button>
+        <button data-command="italic">I</button>
+        <button data-command="underline">U</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
