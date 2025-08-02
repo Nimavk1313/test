@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanvasFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head><body>
+    <div id="editor-container">
+        <div id="top-toolbar">
+            <div class="breakpoint-switcher">
+                <button id="desktop-view">Desktop</button>
+                <button id="tablet-view">Tablet</button>
+                <button id="mobile-view">Mobile</button>
+            </div>
+        </div>
+        <div id="main-content">
+            <div id="left-panel">
+                <div id="add-elements-panel">
+                    <h3>Add Elements</h3>
+                    <div class="element" draggable="true" data-type="section">Section</div>
+                    <div class="element" draggable="true" data-type="container">Container</div>
+                    <div class="element" draggable="true" data-type="heading">Heading</div>
+                </div>
+                <div id="layers-panel">
+                    <h3>Layers</h3>
+                    <ul id="layer-list"></ul>
+                </div>
+            </div>
+            <div id="canvas-area">
+                <iframe id="canvas" name="canvas"></iframe>
+            </div>
+            <div id="right-panel">
+                <h3>Styles</h3>
+                <div id="style-panel"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

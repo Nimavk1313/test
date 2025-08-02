@@ -1,0 +1,117 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f0f2f5;
+}
+
+#editor-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#top-toolbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.breakpoint-switcher button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.breakpoint-switcher button.active {
+    background-color: #1890ff;
+    color: #fff;
+    border-color: #1890ff;
+}
+
+#main-content {
+    display: flex;
+    height: 100%;
+}
+
+#left-panel, #right-panel {
+    width: 240px;
+    padding: 16px;
+    background-color: #ffffff;
+    border-right: 1px solid #d9d9d9;
+    overflow-y: auto;
+}
+
+#right-panel {
+    border-right: none;
+    border-left: 1px solid #d9d9d9;
+}
+
+#left-panel h3, #right-panel h3 {
+    margin-top: 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#add-elements-panel .element {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f0f2f5;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    cursor: grab;
+    text-align: center;
+}
+
+#layers-panel {
+    margin-top: 20px;
+}
+
+#layer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#layer-list li {
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#layer-list li:hover {
+    background-color: #f0f2f5;
+}
+
+#layer-list li.selected {
+    background-color: #e6f7ff;
+    border-left: 3px solid #1890ff;
+    font-weight: 600;
+}
+
+#canvas-area {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #e9e9e9;
+    overflow: auto;
+}
+
+#canvas {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: width 0.3s ease-in-out;
+}
